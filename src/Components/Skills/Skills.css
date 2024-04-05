@@ -1,0 +1,89 @@
+.skillSection {
+    background-color: rgb(24, 24, 24);
+    border-radius: 0.5rem;
+    height:auto;
+    width: 95vw;
+    margin: auto;
+    z-index: -1;
+    overflow: hidden;
+    padding: 4rem 2rem;
+}
+.skills{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.mySkills{
+    display: inline-flex;
+}
+.skillTitle{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+}
+.skillSet{
+    background-color: rgb(69, 69, 69);
+    padding: 2rem;
+    margin :0 2rem;
+    border-radius: 0.5rem;
+}
+.skillText p {
+    font-size: 15px;
+}
+.skillText h1{
+    color: red;
+}
+.webDevelopmentImg , .appDevelopmentImg {
+    object-fit: cover;
+    max-height: 4rem;
+    max-width: 4rem;
+    margin: 0.5rem;
+}
+
+@media screen and (max-width:900px) {
+    .mySkills{
+        display: block;
+    }
+    .skillSet {
+        margin: 3rem;
+    }
+    .webDevelopmentImg , .appDevelopmentImg {
+        object-fit: cover;
+        max-height: 3rem;
+        max-width: 3rem;
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .skillSection {
+        padding: 0 0.5rem 2rem 0.5rem;
+    }
+    .skills{
+        margin: 2rem 0;
+    }
+    .mySkills{
+        display: block;
+    }
+    .skillSet {
+        margin: 1rem auto;
+        padding: 1.2rem;
+    }
+    .webDevelopmentImg , .appDevelopmentImg {
+        object-fit: cover;
+        max-height: 2rem;
+        max-width: 2rem;
+        margin: 0.3rem;
+    }
+    .skillTitle{
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .skillText p {
+        font-size: 10px;
+    }
+    .skillText h1{
+        color: red;
+        font-size: smaller;
+    }
+}

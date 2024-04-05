@@ -1,0 +1,103 @@
+.Header{
+    height: 4.5rem;
+    width: 100vw;
+    max-width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: fixed;
+    background-color: rgb(12, 12, 12);
+    border-bottom: 1px solid grey;
+}
+.desktopMenuimg {
+    object-fit: cover;
+    height: 4rem;
+    width:10rem;
+}
+.desktopMenuLinklist{
+margin:1rem;
+cursor: pointer;
+}
+.desktopMenuLinklist:hover{
+    color: red;
+    border-bottom: 2px solid red;
+    padding-bottom: 0.3rem;
+}
+.desktopMenubtn{
+    padding: 0.5rem 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5rem;
+    border: none;
+    margin: 0 2rem 0 0;
+}
+.Contactimg{
+    object-fit: cover;
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+    padding: 0 0.3rem;
+}
+
+.active {
+    color: red;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid red;
+}
+
+.desktopMenu {
+    position: absolute;
+    top: 5rem;
+    right: 1.5rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 6rem;
+    background-color: rgb(12, 12, 12) ;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+}
+.menuLinklist {
+    cursor: pointer;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    background-color: rgb(30,30,30);
+    border-radius: 0.5rem;
+    height: fit-content;
+    width: auto;
+    font-size: 15px;
+}
+
+.menuImg {
+    height: 2.8rem;
+    width: 4.5rem;
+    display: none;
+    object-fit: cover;
+}
+
+@media screen and (max-width:700px) {
+    .desktopMenulink, .desktopMenubtn {
+        display: none;
+    }
+    .menuImg {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:500px){
+    .menuImg {
+        height: 2rem;
+        width: 3.5rem;
+    }
+    .menuLinklist{
+        font-size: 12px;
+    }
+    .desktopMenuimg {
+        height: 4rem;
+        width:8rem;
+    }
+}

@@ -1,0 +1,106 @@
+.contactSec{
+    padding: 1rem;
+    margin: 6rem auto;
+    height: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(24, 24, 24);
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+}
+
+.contactHeading {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0.5rem;
+    color: red;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.name, .emailid {
+    margin: 0.5rem;
+    padding: 0.7rem;
+    background-color: rgb(67, 67, 67);
+    width: 25rem;
+    height: 2.5rem;
+    font-size: 12px;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+}
+.message {
+    margin: 0.5rem;
+    padding: 0.7rem;
+    background-color: rgb(67, 67, 67);
+    width: 25rem;
+    height: auto;
+    font-size: 12px;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.msgBtn {
+    margin:1rem;
+    padding: 0.4rem;
+    width: 5rem;
+    height:auto;
+    border: none;
+    border-radius: 0.5rem;
+}
+.imgInsta, .imgFacebook, .imgLinkedin, .imgGithub {
+    height: 2rem;
+    width: 2rem;
+    margin: 0.7rem;
+}
+
+@media screen and (max-width:550px){
+    .contactSec{
+        padding: 0.8rem;
+        margin: 2rem auto;
+    }
+    
+    .contactHeading {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0.5rem;
+    }
+    .contactForm{
+        padding:0;
+    }
+    
+    .name, .emailid {
+        margin: 0.5rem;
+        padding: 0.7rem;
+        width: 17rem;
+        height: 2rem;
+        font-size: 12px;
+    }
+    .message {
+        margin: 0.5rem;
+        padding: 0.7rem;
+        width: 17rem;
+        height: auto;
+        font-size: 12px;
+    }
+    
+    .msgBtn {
+        margin:1rem;
+        padding: 0.4rem;
+        width: 3rem;
+    }
+    .imgInsta, .imgFacebook, .imgLinkedin, .imgGithub {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin: 0.4rem;
+    }
+}

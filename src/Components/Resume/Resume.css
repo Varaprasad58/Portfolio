@@ -1,0 +1,26 @@
+.resume {
+    margin: 0 2rem 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resumeBtn {
+    background-color: rgb(218, 17, 17);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    margin: 0;
+    margin: 1rem;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:500px){
+    .resumeBtn {
+        padding: 0.5rem;
+        margin: 0.7rem;
+        font-size: 12px;
+    }
+}
