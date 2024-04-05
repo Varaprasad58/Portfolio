@@ -5,6 +5,7 @@ import Facebook from "../../Images/Facebook.png";
 import Linkedin from "../../Images/Linked in.png";
 import Github from "../../Images/Github.png";
 import emailjs from "@emailjs/browser";
+import {Button} from "antd";
 
 const Contact = () => {
   const form = useRef();
@@ -27,7 +28,7 @@ const Contact = () => {
         <input type='text' className='name' placeholder='Your name' name='from_name'/>
         <input type='email' className='emailid' placeholder='Your email' name='from_email'/>
         <textarea name='message' className='message' rows="5" placeholder='Your message'/>
-        <input type='submit' value='send' className='msgBtn'/>
+        <Button type="primary" value="send" className='msgBtn' style="color:grey"></Button>
       </form>
         <div className='socialmedia'>
           <a href='https://www.instagram.com/varaprasad_akireddy?igsh=MjB0NzZ2NTdpeGl2' target='blank'><img src={Insta} alt='Insta' className='imgInsta'/></a>
