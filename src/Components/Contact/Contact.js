@@ -28,7 +28,7 @@ const Contact = () => {
         <input type='text' className='name' placeholder='Your name' name='from_name'/>
         <input type='email' className='emailid' placeholder='Your email' name='from_email'/>
         <textarea name='message' className='message' rows="5" placeholder='Your message'/>
-        <Button type="primary" value="send" className='msgBtn' style="color:grey"></Button>
+        <input type='submit' value='send' className='msgBtn'/>
       </form>
         <div className='socialmedia'>
           <a href='https://www.instagram.com/varaprasad_akireddy?igsh=MjB0NzZ2NTdpeGl2' target='blank'><img src={Insta} alt='Insta' className='imgInsta'/></a>
